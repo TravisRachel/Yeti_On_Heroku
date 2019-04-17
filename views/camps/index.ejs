@@ -1,0 +1,55 @@
+
+<% include ../partials/header %> 
+
+
+  
+ <div class="container">
+    
+  <header class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">The Coolest Camp Sites In The Word!</h1>
+    <p>
+     <a class="btn btn-primary btn-lg" href="/camps/new"> add a new site! </a>
+      <a class="btn btn-primary btn-lg" href="/"> Back Home! </a>
+    </p>
+   
+  </div>
+</header>
+    
+    
+
+
+
+    <div  class="row  justify-content-center">
+        
+    <% camps.forEach(function(camps){ %>
+    
+    
+        <div class="card text-center h-100" style="width: 18rem; hight: 10rem; margin: 1em;">  
+        <img class="card-img-top" src="<%= camps.image %>" alt="Card image cap">
+         
+          <div class="card-body">
+            <h5 class="card-title"><%= camps.name %></h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+          </div>
+          <p> 
+                <a href="/camps/<%= camps._id %>" class="btn btn-primary"> More Info?</a>
+          </p>
+  </div>
+  <% });%>
+    
+</div>
+
+    
+    
+
+
+
+
+
+
+
+<% include  ../partials/footer %> 
+
+ 
