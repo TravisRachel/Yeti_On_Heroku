@@ -12,7 +12,9 @@ const express  = require("express"),
   
  //required packages^^^
  
- const PORT = process.env.PORT || 5500;
+ const PORT = process.env.PORT || 5501;
+ const HOST = '127.0.0.1';
+
  
  
 //App config
