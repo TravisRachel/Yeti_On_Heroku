@@ -1,6 +1,9 @@
 
 <% include ../partials/header %> 
 
+<div id="index">
+
+
 
   
  <div class="container">
@@ -25,7 +28,7 @@
     <% camps.forEach(function(camps){ %>
     
     
-        <div class="card text-center h-100" style="width: 18rem; hight: 10rem; margin: 1em;">  
+        <div class="card text-center h-100" style="width: 18rem; height: 10rem; margin: 1em;">  
         <img class="card-img-top" src="<%= camps.image %>" alt="Card image cap">
          
           <div class="card-body">
@@ -39,17 +42,8 @@
   </div>
   <% });%>
     
+  </div>
 </div>
-
-    
-    
-
-
-
-
-
-
-
 <% include  ../partials/footer %> 
 
  
