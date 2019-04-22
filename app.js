@@ -68,4 +68,4 @@ app.use(authRoutes);
 
 
 
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+app.listen(PORT,'0.0.0.0', HOST, () => console.log(`Listening on ${ PORT }`))
